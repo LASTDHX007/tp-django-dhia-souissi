@@ -1,0 +1,29 @@
+{% extends 'magasin/base.html' %}
+{% block title %} Les Commandes {% endblock title %}
+{% block content %}
+<!-- body -->
+<div class="container-fluid mt-3">
+    <div class="row">
+       <!-- all products -->
+        <div id='products' class="col-lg-9 mx-auto">
+            <div class="row mx-auto">
+               {% for com in commandes %}
+                <div style="width: 18rem;">
+                    <div >
+                        <p >{{list.img}}</p>
+
+                        <p >{{com.dateCde}}</p>
+                        <p ><b>{{com.totalCde}}</b></p>
+
+                        
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

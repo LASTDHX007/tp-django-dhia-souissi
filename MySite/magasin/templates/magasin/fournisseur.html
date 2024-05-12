@@ -1,0 +1,27 @@
+{% extends 'magasin/base.html' %}
+{% block title %} Fournisseur {% endblock title %}
+{% block content %}
+<!-- body -->
+<div class="container-fluid mt-3">
+    <div class="row">
+       <!-- all products -->
+        <div id='products' class="col-lg-9 mx-auto">
+            <div class="row mx-auto">
+               {% for fr in liste %}
+                    <div >
+                        <p >{{fr.nom}}</p>
+                        <p >{{fr.adresse}}</p>
+                        <p >{{fr.email}}</p>
+                        <p >{{fr.telephone}}</p>
+
+                        
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

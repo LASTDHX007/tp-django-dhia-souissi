@@ -1,0 +1,24 @@
+{% extends 'magasin/base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <img src="/media/{{ list.img }}" width="500px" height="500px" alt="">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="text-warning display-3">
+                {{ list.libellé }}
+            </div>
+            <div class="text-danger ">
+               Prix:  $ {{ list.prix }}
+            </div>
+            <div>
+                {{ list.desciption }}
+            </div>
+            <a href="#"><button class="btn btn-success">Acheter</button></a>
+        </div>
+    </div>
+
+{% endblock %}
